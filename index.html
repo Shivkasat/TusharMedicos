@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Products Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-left">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" width="120" height="50">
+      </div>
+      <nav class="nav-links">
+        <a href="#">MEDICINES</a>
+        <a href="#">LAB TESTS <span class="badge">SAFE</span></a>
+        <a href="#">CONSULT DOCTORS</a>
+       
+        <a href="#">HEALTH PLAN <span class="badge">SAVE MORE</span></a>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <div class="location-box">
+        <span class="location-icon">📍</span>
+        <span>Nagpur</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search for Medicines and Health Products">
+        <span class="search-icon">🔍</span>
+      </div>
+      <button class="quick-order-btn">Quick order</button>
+      <button id="login-btn" class="btn">Login</button>
+      
+      <!-- Cart -->
+      <div class="cart">
+        <span class="cart-icon">🛒</span>
+        <span class="cart-count" id="cart-count">0</span>
+        <div class="cart-dropdown">
+          <div class="cart-items" id="cart-items"></div>
+          <div class="cart-footer">
+            <span id="cart-total">Total: Rs.0</span>
+            <button class="btn" id="checkout-btn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    
+      <nav class="nav-bottom">
+        <ul>
+          <li><a href="#">Health Resource Center</a></li>
+          <a href="#">Vitamins & Nutrition</a></li>
+          <div class="dropdown">
+            <div>
+              <ul>
+                <li><strong>Multivitamins</strong></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Vegetarian</a></li>
+                <li><strong>Omega & Fish Oil</strong></li>
+                <li><a href="#">Fish Oil</a></li>
+                <li><a href="#">Cod Liver Oil</a></li>
+                <li><a href="#">Flax Seed Oil</a></li>
+                <li><strong>Calcium</strong></li>
+                <li><strong>Minerals</strong></li>
+                <li><a href="#">Iron</a></li>
+                <li><strong>Vitamin B</strong></li>
+              </ul>
+              <ul>
+                <li><a href="#">Vitamin D</a></li>
+                <li><a href="#">Vitamin C</a></li>
+                <li><a href="#">Vitamin A</a></li>
+                <li><strong>Global Supplements</strong></li>
+                <li><a href="#">Now Foods</a></li>
+                <li><a href="#">Solgar</a></li>
+                <li><a href="#">Nordic naturals</a></li>
+                <li><strong>Hair & Skin Supplements</strong></li>
+                <li><strong>Specialty Supplements</strong></li>
+                <li><a href="#">Antioxidants</a></li>
+                <li><a href="#">Glucosamine</a></li>
+                <li><a href="#">Vitamin K</a></li>
+                <li><strong>Gummies Vitamins</strong></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+          <li><a href="#">Nutritional Drinks</a></li>
+          <li><a href="#">Fitness Supplements</a></li>
+          <li><a href="#">Stomach Care</a></li>
+          <li><a href="#">Feminine Care</a></li>
+          <li><a href="#">Healthy Snacks</a></li>
+          <li><a href="#">Diabetes</a></li>
+          <li><a href="#">Immunity Boosters</a></li>
+        </ul>
+      </nav><br>
+    
+
+ 
+
+    <main class="container px-4 py-8 mx-auto">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div class="p-8 bg-orange-100 rounded-lg flex items-center justify-between">
+          <div>
+            <h2 class="text-4xl font-bold text-brown-800">Fresh & <span class="italic">Glowing</span> Skin</h2>
+          
+          </div>
+          <div class="px-4 py-2 text-2xl font-bold bg-white rounded-md">UP TO 35% OFF</div>
+        </div>
+        <div class="p-8 bg-green-100 rounded-lg">
+          <h2 class="text-2xl font-bold text-green-800">DESIGNED TO MEET YOUR HEALTH NEEDS</h2>
+          <p class="mt-4 text-xl font-bold text-green-700">Grab Discount of 30-40% on Healthcare Products</p>
+          <button class="px-6 py-2 mt-4 bg-black text-white rounded-md">SHOP NOW</button>
+        </div>
+      </div>
+
+      <section class="mt-12">
+        <h2 class="mb-6 text-2xl font-bold">Popular categories</h2>
+
+</head>
+
+    <div class="container">
+
+        <div class="categories">
+            <div class="category">
+                <img src="https://onemg.gumlet.io/859adc35-4c39-4094-a74d-281ffff9a3e6.png?format=auto" alt="Best offers">
+                <p>Best offers</p>
+            </div>
+            <div class="category">
+                <img src="https://onemg.gumlet.io/67be6470-4f74-4a2e-a37a-ececb775afeb.png?format=auto" alt="Vitamins & Supplements">
+                <p>Vitamins & Supplements</p>
+            </div>
+            <div class="category">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-01%2F1706010756_Women+care.jpg?format=auto" alt="Nutritional Drinks">
+                <p>Nutritional Drinks</p>
+            </div>
+            <div class="category">
+                <img src="https://onemg.gumlet.io/624f6cd2-f857-4f8c-a689-75c849516ea8.png?format=auto" alt="Skin Care">
+                <p>Skin Care</p>
+            </div>
+            <div class="category">
+                <img src="https://onemg.gumlet.io/4e4b7cd8-0885-42c2-8915-65b7355fc1d8.png?format=auto" alt="Hair Care">
+                <p>Hair Care</p>
+            </div>
+            <div class="category">
+                <img src="https://onemg.gumlet.io/33d8bac6-26c1-4828-8b39-4f6183430833.png?format=auto" alt="Sexual Wellness">
+                <p>Pain Relief</p>
+            </div>
+            <div class="category">
+                <img src="https://onemg.gumlet.io/59e2ffed-ab85-496d-9423-d97cd0305b52.png?format=auto" alt="Ayurveda Products">
+                <p>Ayurveda Products</p>
+            </div>
+        </div>
+    </div>
+
+
+
+          <!-- Add more categories similarly -->
+        </div>
+      </section>
+      <h2 class="text-2xl font-bold">Trending now</h2>
+      <button class="px-4 py-2 text-white bg-red-500 rounded-md">SEE ALL</button>
+      <section class="mt-12">
+        <div class="flex items-center justify-between mb-6">
+
+          <div class="grid-item">
+            <div class="p-4 bg-white rounded-lg shadow-md relative">
+              <span class="absolute top-2 left-2 px-2 py-1 text-xs text-white bg-green-500 rounded">SALE</span>
+              <img src="https://imgs.search.brave.com/iFug4iEf4Ky-cK9iSWiFLbF3MIdek5vh6IrBuYaUuNc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/Lzkxb01CVHpORVlM/LmpwZw" alt="Vitamin E Tablet" class="object-cover w-full h-48 mb-4">
+              <h3 class="mb-2 font-semibold text-sm line-clamp-2">Vitamin E Tablet</h3>
+              <p class="mb-2 text-xs text-gray-500">Rs.44</p>
+              <p class="mb-2 text-xs text-gray-500">Some text about the Vitamin E Tablet..</p>
+              <div class="flex items-center mb-2">
+                <span class="mr-2 font-bold">Rs.44</span>
+                <span class="mr-2 text-sm text-gray-500 line-through">MRP Rs.60</span>
+                <span class="text-sm text-green-500">27% off</span>
+              </div>
+              <p class="text-xs text-gray-500">Delivery in 15 mins</p>
+              <button class="btn add-to-cart-btn" data-name="Vitamin E" data-price="44">Add to Cart</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <span class="absolute top-2 left-2 px-2 py-1 text-xs text-white bg-green-500 rounded">NEW</span>
+            <img src="https://imgs.search.brave.com/mXwlCw2A9xEbi-ojLVvLpFh_e95NK_ALjYZaXik5w1Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGlzdGFjYXJ0LmNv/bS9jZG4vc2hvcC9w/cm9kdWN0cy9kb3du/bG9hZF8xNV8xNTkx/NjFhNC04ODMyLTQz/MDQtOTkzMS0zNGUy/YTQ3MTgwOTRfMTI4/MHguanBnP3Y9MTY3/NTc0OTI3MA" alt="ProteinX" class="object-cover w-full mb-4">
+            <h3 class="mb-2 font-semibold text-sm">ProteinX</h3>
+            <p class="text-xs text-gray-500">Rs.800</p>
+            <p class="text-xs text-gray-500">High-quality protein supplement for muscle growth and recovery.</p>
+            <div class="flex items-center mb-2">
+              <span class="mr-2 font-bold">Rs.800</span>
+              <span class="text-sm text-gray-500 line-through">MRP Rs.1,200</span>
+              <span class="text-sm text-green-500">33% off</span>
+            </div>
+            <p class="text-xs text-gray-500">Delivery in 2-3 days</p>
+            <button class="btn add-to-cart-btn" data-name="ProteinX" data-price="800">Add to Cart</button>
+          </div>
+            <div class="grid-item">
+              <div class="p-4 bg-white rounded-lg shadow-md relative">
+                <span class="absolute top-2 left-2 px-2 py-1 text-xs text-white bg-green-500 rounded">BEST SELLER</span>
+                <img src="https://imgs.search.brave.com/jwqzxO9lmyihz4e6QJmF7Q5u138ugemdI55hiMcm73M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzU3/N2Q2OTJkMmU2OWNm/ZjBhNTEwMjdhOS8x/NTIxNTc5NjQ3MDI1/LURTWVdOTlM2SUVY/TkZZVldSNDdFL0Nl/cmVsYWNNYXJpYTIu/SlBH" alt="Nestle Cerelac" class="object-cover w-full h-48 mb-4">
+                <h3 class="mb-2 font-semibold text-sm line-clamp-2">Nestle Cerelac</h3>
+                <p class="mb-2 text-xs text-gray-500">Rs.250</p>
+                <p class="mb-2 text-xs text-gray-500">Nutritious baby cereal for healthy growth and development.</p>
+                <div class="flex items-center mb-2">
+                  <span class="mr-2 font-bold">Rs.250</span>
+                  <span class="mr-2 text-sm text-gray-500 line-through">MRP Rs.300</span>
+                  <span class="text-sm text-green-500">17% off</span>
+                </div>
+                <p class="text-xs text-gray-500">Delivery in 2-3 days</p>
+                <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Add to Cart</button>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="p-4 bg-white rounded-lg shadow-md relative">
+                <span class="absolute top-2 left-2 px-2 py-1 text-xs text-white bg-green-500 rounded">NEW ARRIVAL</span>
+                <img src="https://imgs.search.brave.com/PG29r9nKY7jIP9tVxA5bgbO4HPtMkEJk53NmCQA0vlM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS51bHRhLmNvbS9p/L3VsdGEvMjU4Njk2/OD93PTEwODAmaD0x/MDgwJmZtdD1hdXRv" alt="Cetaphil Skin Cleanser" class="object-cover w-full h-48 mb-4">
+                <h3 class="mb-2 font-semibold text-sm line-clamp-2">Cetaphil Skin Cleanser</h3>
+                <p class="mb-2 text-xs text-gray-500">Rs.450</p>
+                <p class="mb-2 text-xs text-gray-500">Gentle and effective skin cleanser for all skin types.</p>
+                <div class="flex items-center mb-2">
+                  <span class="mr-2 font-bold">Rs.450</span>
+                  <span class="mr-2 text-sm text-gray-500 line-through">MRP Rs.550</span>
+                  <span class="text-sm text-green-500">18% off</span>
+                </div>
+                <p class="text-xs text-gray-500">Delivery in 2-3 days</p>
+                <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Add to Cart</button>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="p-4 bg-white rounded-lg shadow-md relative">
+                <span class="absolute top-2 left-2 px-2 py-1 text-xs text-white bg-green-500 rounded">BEST SELLER</span>
+                <img src="https://imgs.search.brave.com/EdAyahw7BQj-t6m_bgeGS2NdRG3F-S1uHfMkLhYMRYc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bmV0bWVkcy5jb20v/aW1hZ2VzL3Byb2R1/Y3QtdjEvNjAweDYw/MC8xNTE3NS9tb292/X3BhaW5fcmVsaWVm/X3NwZWNpYWxpc3Rf/c3ByYXlfNTBfZ21f/MC5qcGc" alt="Moov Spray" class="object-cover w-full h-48 mb-4">
+                <h3 class="mb-2 font-semibold text-sm line-clamp-2">Moov Spray</h3>
+                <p class="mb-2 text-xs text-gray-500">Rs.120</p>
+                <p class="mb-2 text-xs text-gray-500">Fast relief from pain and inflammation.</p>
+                <div class="flex items-center mb-2">
+                  <span class="mr-2 font-bold">Rs.120</span>
+                  <span class="mr-2 text-sm text-gray-500 line-through">MRP Rs.150</span>
+                  <span class="text-sm text-green-500">20% off</span>
+                </div>
+                <p class="text-xs text-gray-500">Delivery in 2-3 days</p>
+                <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Add to Cart</button>
+              </div>
+            </div>
+ 
+      </section>
+    </main>
+  </div>
+  <div class="modal" id="login-modal">
+    <div class="modal-content">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username"><br><br>
+      <input type="password" id="password" placeholder="Password"><br><br>
+      <button id="login-submit-btn" class="btn">Login</button>
+      <button id="close-modal-btn" class="btn">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
